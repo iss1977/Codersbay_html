@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+<header>
+  <img src="https://image.brigitte.de/10926664/t/oj/v3/w480/r1/-/hund-auf-reisen.webp" alt="Picture">
+</header>
+<h1>Energy Fitness</h1>
+<h3>Our services</h3>
+<ul>
+  <li>Personal training</li>
+  <li>sauna</li>
+  <li>Diet planning</li>
+</ul>
+<hr>
+<h3>Price list</h3>
+<table>
+  <tr>
+    <th>Service</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>Personal training</td>
+    <td>50USD</td>
+  </tr>
+  <tr>
+    <td>Sauna</td>
+    <td>20USD</td>
+  </tr>
+  <tr>
+    <td>Diet plan</td>
+    <td>120USD</td>
+  </tr>
+</table>
+<form action="order.html" method="post">
+  <label for="productCode">Product code:</label>
+  <input type="text" name="productCode" size="10" maxlenght="10"/> <br>
+  <input type="radio" name="paymentType" value="cash" checked> Cash <br>
+  <input type="radio" name="paymentType" value="cc" > Credit Card <br>
+  <select name="deliveryMethod" >
+    <option value="P">Pick up at store</option>
+    <option value="C">Courier</option>
+  </select>
+  <input type="checkbox" name="GDPR" value ="accepted">GDPR Accepted <br>
+  <textarea name="mesage"  cols="40" rows="3">Enter your message </textarea>
+  <input type="hidden" name="customerCode" value="CC12345"> <br>
+  <button type="submit" name="action" value="submit">Submit order</button>
+  <input type="reset" value="Reset form">
+  
+</form>
+
+
+<footer>
+  <div><b>Our adress</b></div>
+  <div><i>New York</i>, I8<sup>th</sup>street</div>
+</footer>
+
+</body>
+</html>
