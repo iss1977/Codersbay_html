@@ -1,0 +1,31 @@
+
+.R{
+    color:red;
+}
+
+.U{
+    color:green;
+}
+
+.J{
+    color:black
+}
+
+.Footbal   {
+    background-color: brown;
+    border: 2px white dotted;
+}
+.Darts{
+    background-color: green;
+}
+.Tennis{
+    background-color: yellow;
+    border: 2px white dotted;
+}
+.Baschetbal{
+    background-color: orange;
+    border: 2px white dotted;
+}
+.Box{
+    background-color: red;
+}
