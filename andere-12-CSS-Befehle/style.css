@@ -1,0 +1,60 @@
+body,html,*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.slides-container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    border: darkgray 3px solid;
+}
+
+.product-card{
+    max-width:30%;
+    background-color: white;
+    border: darkgray 2px solid;
+    margin: 10px;
+    position: relative;
+}
+
+/* Product card styling */
+
+.product-card img{
+    margin: 10px auto ;
+    width: auto;
+    height: 150px;
+
+}
+
+h2{
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+.product-card p{
+width: 90%;
+margin:auto;
+}
+
+.product-card>button{
+    text-align: center;
+}
+
+button.left{
+    padding:10px;
+    font-weight: bold;
+    position:absolute;
+    top:30%;
+    left:0px;
+}
+
+button.right{
+    padding:10px;
+    font-weight: bold;
+    position:absolute;
+    top:30%;
+    right:0px;
+}
