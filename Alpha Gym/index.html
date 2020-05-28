@@ -1,44 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
     <script src="https://kit.fontawesome.com/d02b6e008c.js" crossorigin="anonymous">
-        src="Javascript_Vorlage.js"
+        src = "Javascript_Vorlage.js"
     </script>
 
     <title>Alpha Gym</title>
 </head>
+
 <body>
-    <header>
+    <header id="header">
         <h1>Alpha<i class="fas fa-dumbbell"></i>Gym</h1>
     </header>
     <nav>
-        <a href="#">Services</a>
-        <a href="#">Pricing</a>
-        <a href="#">Contact</a>
+        <a href="#teaser1">Services</a>
+        <a href="#preis-table">Pricing</a>
+        <a href="#contact-form">Contact</a>
     </nav>
-    <section class="teaser">
+    <section class="teaser" id="teaser1">
         <div>
+            <picture>
+                <source media="(max-width: 799px)" srcset="./Images/fitness-small.jpg">
+                <source media="(min-width: 800px)" srcset="./Images/fitness-medium.jpg">
+                <img src="./Images/fitness-small.jpg" alt="Fitness picture">
+            </picture>
+
             <h1>Functional training</h1>
-            <p>Whant to experience extreme gain in strenght and endurance? Try functional trainings to quickly get into shape and condition</p>
+            <p>Whant to experience extreme gain in strenght and endurance? Try functional trainings to quickly get into
+                shape and condition</p>
         </div>
     </section>
     <section class="teaser">
         <div>
+            <picture>
+                <source media="(max-width: 799px)" srcset="./Images/girls-exercising-small.jpg">
+                <source media="(min-width: 800px)" srcset="./Images/girls-exercising-medium.jpg">
+                <img src="./Images/girls-exercising-small.jpg" alt="Fitness picture">
+            </picture>
             <h1>Weight Training</h1>
             <p>Lifting heavy is the best way to gain muscle size and strenght. Be a beast of the gym</p>
         </div>
     </section>
     <section class="teaser">
         <div>
+            <picture>
+                <source media="(max-width: 799px)" srcset="./Images/boxing-small.jpg">
+                <source media="(min-width: 800px)" srcset="./Images/boxing-medium.jpg">
+                <img src="./Images/boxing-small.jpg" alt="Fitness picture">
+            </picture>
             <h1>Boxing</h1>
             <p>strenght, speed and tactics</p>
-    </div>
+        </div>
     </section>
 
+
+    <!--Prieces-->
+    <div class="preis-table" id="preis-table">
+    <table class="greyGridTable">
+
+        <h1>Unsere Preise</h1>
+
+      <!--  <thead>
+            <tr>
+                <th>Leistungart</th>
+                <th>Preis</th>
+            </tr>
+        </thead>-->
+        <tbody>
+            <tr>
+                <td>Tageskarte</td>
+                <td>€ 10,--</td>
+            </tr>
+            <tr>
+                <td>2 Wochen Karte</td>
+                <td>€ 25,--</td>
+            </tr>
+            <tr>
+                <td>Monatsabo</td>
+                <td>€ 50,--</td>
+            </tr>
+            <tr>
+                <td>Jahresabo</td>
+                <td>€ 500,-</td>
+            </tr>
+        </tbody>
+        </tr>
+    </table>
+</div>
+
+
+    <!-- Google maps-->
+    <h3>Find us with Google Maps</h3>
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6000.781023123999!2d14.295669971749012!3d48.306441945327634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47739786706cf89b%3A0x3262dbd413d14956!2sFotostudio%20Eder!5e0!3m2!1sen!2sat!4v1590651831519!5m2!1sen!2sat"
+        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+
+
+
+    <!--Contact form-->
+
+
+
+    <div class="contact-form" id="contact-form">
+        <h2>Contact form</h2>
+        <form action="https://formspree.io/xpzypogr" method="post">
+            <label class="form-label">
+                  Your name:
+                <input type="text" name="name" placeholder="Enter your name" size="20">
+            </label>
+            <br>
+            <label class="form-label"> Your email:
+                <input type="email" name="_replyto" placeholder="Enter your email" size="20">
+            </label>
+            <br>
+            <label class="text-area">
+                <p>Enter your message:</p>
+                <textarea name="comment" cols="30" rows="10"></textarea>
+            </label>
+            <br>
+            <div class="button-container">
+                <button class="btn btn-submit" type="submit" name="action" value="submit">Submit order</button>
+                <button class="btn btn-reset" type="reset" value="Reset form">Reset form</button>
+            </div>
+        </form>
+    </div>
+
+    <!--Footer-->
     <footer>
+        <a class="impressum-datenschutz" href="impressum.html">Impressum</a>
+        <a class="impressum-datenschutz" href="datenschutz.html">Datenschutzerklärung</a>
+       
         <addr>
             45W 14th street, New York, NY 12311
             <div class="phone">
@@ -47,5 +144,16 @@
             </div>
         </addr>
     </footer>
+
+
+    <!--Scripts for google maps
+    <script src="app.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoCEfYVioSTTzRMScnDumgA8GFBWY970I&callback=initMap">
+    </script>
+    -->
+
+    <a href="#header"><i class="fas fa-arrow-circle-up" id="myBtn"></i></a>
 </body>
+
 </html>
